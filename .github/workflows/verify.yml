@@ -1,0 +1,14 @@
+name: Verify cask
+on:
+  push:
+    paths: ['Casks/**/*.rb']
+  pull_request:
+    paths: ['Casks/**/*.rb']
+permissions:
+  contents: read
+jobs:
+  style:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - run: brew style --cask Casks/*.rb
