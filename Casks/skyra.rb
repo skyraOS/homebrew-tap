@@ -1,6 +1,6 @@
 cask "skyra" do
-  version "0.1.0"
-  sha256 "1962fd2b6e8920460d7af7b20b8c8c0514c1ecfb468399411903e4ff1ace66a6"
+  version "0.1.1"
+  sha256 "617c8c3a8fe9f24c65155965da747061cf31e83d53dfe65e9b03da6b1ebb53b5"
 
   url "https://github.com/skyraOS/skyra-releases/releases/download/v#{version}/Skyra-#{version}-macos-arm64.zip"
   name "Skyra"

@@ -1,6 +1,6 @@
 # Skyra Homebrew tap
 
-Official distribution of Skyra 0.1.0. Apple Silicon; macOS 14+.
+Official distribution of Skyra 0.1.1. Apple Silicon; macOS 14+.
 
 ```sh
 brew tap skyraOS/tap
