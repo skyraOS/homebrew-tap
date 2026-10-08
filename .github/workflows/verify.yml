@@ -1,9 +1,9 @@
 name: Verify cask
 on:
   push:
-    paths: ['Casks/**/*.rb']
+    paths: ['Casks/**/*.rb', '.github/workflows/verify.yml']
   pull_request:
-    paths: ['Casks/**/*.rb']
+    paths: ['Casks/**/*.rb', '.github/workflows/verify.yml']
 permissions:
   contents: read
 jobs:
