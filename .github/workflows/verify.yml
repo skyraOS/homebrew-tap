@@ -11,4 +11,9 @@ jobs:
     runs-on: macos-15
     steps:
       - uses: actions/checkout@v4
-      - run: brew style --cask Casks/*.rb
+      - name: Register checkout as a Homebrew tap and check style
+        run: |
+          brew tap skyraOS/tap
+          TAP="$(brew --repository skyraOS/tap)"
+          cp Casks/*.rb "$TAP/Casks/"
+          brew style --cask "$TAP/Casks/skyra.rb"
